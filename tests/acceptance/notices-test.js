@@ -5,6 +5,10 @@ import { setupApplicationTest } from 'local-storage-test/tests/helpers';
 module('Acceptance | notices', function (hooks) {
   setupApplicationTest(hooks);
 
+  hooks.beforeEach(function () {
+    localStorage.clear();
+  });
+
   test('working with notices', async function (assert) {
     await visit('/');
 
