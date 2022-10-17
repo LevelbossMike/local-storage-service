@@ -17,7 +17,7 @@ export function storageFor(key) {
 
 /**
  * A service that wraps access to local-storage. We wrap
- * local-storage to not polute local-storage during testing.
+ * local-storage to not pollute local-storage during testing.
  */
 export default class LocalStorageService extends Service {
   constructor() {

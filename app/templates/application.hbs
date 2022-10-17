@@ -3,8 +3,8 @@
 <h2 id="title">Welcome to Local-Storage-Test</h2>
 
 {{#if this.showNotice}}
-  <div>Notice-A</div>
+  <div data-test-notice-a>Notice-A</div>
 {{/if}}
-<button type="button" {{on "click" this.dismissNotice}}>Dismiss</button>
+<button type="button" {{on "click" this.dismissNotice}} data-test-dismiss-notice-a>Dismiss</button>
 
 {{outlet}}
